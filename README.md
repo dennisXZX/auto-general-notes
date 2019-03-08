@@ -21,8 +21,13 @@ __Run Java micro service locally__
 
 - visit `http://localhost:9000/?apiHost=http://localhost:8888`
 
-## Ngnix common commands
+__Ngnix common commands__
 
 - start Nginx `sudo nginx`
 - reload Nginx `sudo nginx -s reload`
 - stop Nginx `sudo nginx -s stop`
+
+__Intercept CSAPI2 token__
+
+- Set a break point in `CsApi2AccessTokenRequestInterceptor.java`
+
