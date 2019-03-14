@@ -23,6 +23,14 @@ __Run motorcycle-service locally__
 
 - visit `http://localhost:9000/?apiHost=http://localhost:8888`
 
+In order to build with tests successfully, you would need to set the required envionment variables
+
+```
+export MASTER_PASSWORD=somethingSomething
+
+gradlew clean build -x jacocoTestCoverageVerification
+```
+
 __Ngnix common commands__
 
 - start Nginx `sudo nginx`
