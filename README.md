@@ -1,5 +1,11 @@
 ## Auto & General notes
 
+__Not getting the latest package due to Intellij gradle cache__
+
+- clear the gradle cache `rm -rf $HOME/.gradle/caches/`
+
+- refresh gradle dependencies
+
 __Run motorcycle-service locally__
 
 - update Nginx config file `nginx-int.conf` at `/usr/local/etc/nginx/servers`, so the motorcycle-service request (`http://localhost:8888/api/example-micro-service/1.0/`) can be handled by Nginx
