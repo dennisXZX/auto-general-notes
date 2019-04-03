@@ -32,9 +32,11 @@ __Run motorcycle-service locally__
 In order to build with tests successfully, you would need to set the required envionment variables
 
 ```
-export MASTER_PASSWORD=somethingSomething
+export MASTER_PASSWORD=3dYgu2rkMqobqsILnZJCTZpP
 
-gradlew clean build -x jacocoTestCoverageVerification
+./gradlew -DMASTER_PASSWORD=3dYgu2rkMqobqsILnZJCTZpP clean build
+
+./gradlew clean build -x jacocoTestCoverageVerification
 ```
 
 __Ngnix common commands__
