@@ -32,11 +32,21 @@ __Run motorcycle-service locally__
 In order to build with tests successfully, you would need to set the required envionment variables
 
 ```
+# set the env variable
 export MASTER_PASSWORD=3dYgu2rkMqobqsILnZJCTZpP
 
+# build with DMASTER_PASSWORD
 ./gradlew -DMASTER_PASSWORD=3dYgu2rkMqobqsILnZJCTZpP clean build
 
+# build with test skipped
 ./gradlew clean build -x jacocoTestCoverageVerification
+./gradlew clean build -x test
+```
+
+You can use the `publishToMavenLocal` option to build a package to Maven local to address version number conflicts.
+
+```
+./gradlew clean build pTML
 ```
 
 __Ngnix common commands__
