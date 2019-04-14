@@ -33,10 +33,10 @@ In order to build with tests successfully, you would need to set the required en
 
 ```
 # set the env variable
-export MASTER_PASSWORD=3dYgu2rkMqobqsILnZJCTZpP
+export MASTER_PASSWORD=SomethingSomethingSomething
 
 # build with DMASTER_PASSWORD
-./gradlew -DMASTER_PASSWORD=3dYgu2rkMqobqsILnZJCTZpP clean build
+./gradlew -DMASTER_PASSWORD=SomethingSomethingSomething clean build
 
 # build with test skipped
 ./gradlew clean build -x jacocoTestCoverageVerification
